@@ -109,7 +109,6 @@ variable "teams" {
     review_request_delegation = optional(object({
       algorithm    = optional(string)
       member_count = optional(number)
-      notify       = optional(bool)
     }))
   }))
   default = {}

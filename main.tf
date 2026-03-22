@@ -63,7 +63,6 @@ resource "github_team_settings" "this" {
   review_request_delegation {
     algorithm    = each.value["review_request_delegation"]["algorithm"]
     member_count = each.value["review_request_delegation"]["member_count"]
-    notify       = each.value["review_request_delegation"]["notify"]
   }
 }
 
